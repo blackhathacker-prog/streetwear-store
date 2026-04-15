@@ -1,47 +1,68 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: #0b0f1a;
     color: white;
 }
 
 
-/* HERO SECTION */
+/* HERO */
 
 .hero {
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #000, #1e293b);
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #000, #111827);
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 50px;
+    letter-spacing: 3px;
 }
 
 .hero a {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: #22c55e;
     color: white;
     text-decoration: none;
+    border-radius: 6px;
+}
+
+
+/* INFO BOXES */
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background: #111827;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 
 /* PRODUCTS */
 
 .products {
+    padding: 40px;
+    text-align: center;
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    padding: 40px;
 }
 
 .card {
     background: #111827;
     padding: 15px;
     border-radius: 12px;
-    text-align: center;
 }
 
 .card img {
@@ -51,9 +72,20 @@ body {
 
 button {
     margin-top: 10px;
-    padding: 10px;
     width: 100%;
+    padding: 10px;
     background: #22c55e;
     border: none;
     cursor: pointer;
+    border-radius: 6px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 40px;
 }
