@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Tariqees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="product-page">
+        <img id="img" />
+
+        <h1 id="name"></h1>
+        <h2 id="price"></h2>
+
+        <button onclick="order()">Order on WhatsApp</button>
+        <a href="index.html" class="back">← Back</a>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const name = params.get("name");
+        const price = params.get("price");
+        const img = params.get("img");
+
+        document.getElementById("name").innerText = name;
+        document.getElementById("price").innerText = "KES " + price;
+        document.getElementById("img").src = img;
+
+        function order() {
+            const phone = "2547XXXXXXXX";
+            const message = `Hi Tariqees, I want to order: ${name} for KES ${price}`;
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+
+</html>
