@@ -1,36 +1,58 @@
 body {
-    font-family: Arial;
     margin: 0;
-    background: #0f172a;
+    font-family: Arial;
+    background: #0b0f1a;
     color: white;
-    text-align: center;
 }
 
-header {
-    padding: 20px;
-    background: black;
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #000, #1e293b);
 }
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* PRODUCTS */
 
 .products {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 40px;
 }
 
 .card {
-    background: #1e293b;
+    background: #111827;
     padding: 15px;
-    border-radius: 10px;
-    width: 200px;
+    border-radius: 12px;
+    text-align: center;
 }
 
 .card img {
     width: 100%;
+    border-radius: 10px;
 }
 
 button {
+    margin-top: 10px;
     padding: 10px;
+    width: 100%;
     background: #22c55e;
     border: none;
     cursor: pointer;
