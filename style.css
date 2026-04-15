@@ -6,23 +6,39 @@ body {
 }
 
 
+/* NAV */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #000;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
 /* HERO */
 
 .hero {
     text-align: center;
-    padding: 90px 20px;
+    padding: 100px 20px;
     background: linear-gradient(135deg, #000, #111827);
 }
 
 .hero h1 {
-    font-size: 50px;
-    letter-spacing: 3px;
+    font-size: 42px;
 }
 
-.hero a {
+.btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 12px 25px;
+    padding: 12px 20px;
     background: #22c55e;
     color: white;
     text-decoration: none;
@@ -30,25 +46,25 @@ body {
 }
 
 
-/* INFO BOXES */
+/* CATEGORIES */
 
-.info {
+.categories {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px;
 }
 
-.box {
+.categories div {
     background: #111827;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 
-/* PRODUCTS */
+/* SHOP */
 
-.products {
+.shop {
     padding: 40px;
     text-align: center;
 }
@@ -81,11 +97,21 @@ button {
 }
 
 
+/* TRUST */
+
+.trust {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    background: #000;
+}
+
+
 /* FOOTER */
 
 footer {
     text-align: center;
     padding: 20px;
     background: #000;
-    margin-top: 40px;
 }

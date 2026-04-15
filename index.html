@@ -3,54 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tariqees | Streetwear Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="hero">
-        <h1>TARIQEES</h1>
-        <p>Premium Streetwear & Sneakers</p>
-        <a href="#shop">Explore Collection</a>
+    <!-- NAV -->
+    <header class="nav">
+        <h2>TARIQEES</h2>
+        <a href="#shop">Shop</a>
     </header>
 
-    <section class="info">
-        <div class="box">🚚 Fast Delivery</div>
-        <div class="box">💯 Original Inspired Style</div>
-        <div class="box">📲 Easy WhatsApp Orders</div>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Elevate Your Street Style</h1>
+        <p>Premium sneakers & streetwear drops in Nairobi</p>
+        <a href="#shop" class="btn">Explore Drops</a>
     </section>
 
-    <section id="shop" class="products">
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <div>Sneakers</div>
+        <div>Hoodies</div>
+        <div>Streetwear</div>
+    </section>
 
-        <h2>🔥 Featured Drops</h2>
+    <!-- SHOP -->
+    <section id="shop" class="shop">
+        <h2>🔥 Featured Products</h2>
 
         <div class="grid">
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" />
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
                 <h3>Nike Air Force 1</h3>
                 <p>KES 6,500</p>
-                <button onclick="order('Nike Air Force 1')">Order Now</button>
+                <button onclick="order('Nike Air Force 1')">Order</button>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" />
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
                 <h3>Jordan Retro</h3>
                 <p>KES 8,000</p>
-                <button onclick="order('Jordan Retro')">Order Now</button>
+                <button onclick="order('Jordan Retro')">Order</button>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1528701800489-20be3c1eaac7" />
+                <img src="https://images.unsplash.com/photo-1528701800489-20be3c1eaac7">
                 <h3>Street Hoodie</h3>
                 <p>KES 2,500</p>
-                <button onclick="order('Street Hoodie')">Order Now</button>
+                <button onclick="order('Street Hoodie')">Order</button>
             </div>
 
         </div>
     </section>
 
+    <!-- TRUST -->
+    <section class="trust">
+        <div>🚚 Fast Delivery</div>
+        <div>💯 Quality Checked</div>
+        <div>📲 WhatsApp Orders</div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Tariqees. All rights reserved.</p>
     </footer>
