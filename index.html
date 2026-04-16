@@ -4,47 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tariqees | Streetwear Store</title>
+    <title>Tariqees | Premium Streetwear</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- NAV -->
     <header class="nav">
-        <h2>TARIQEES</h2>
+        <h2 class="logo">TARIQEES</h2>
+        <nav>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+        </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
-        <h1>Streetwear That Hits Different</h1>
-        <p>Premium sneakers & urban fashion drops</p>
+        <h1>Wear The Culture</h1>
+        <p>Exclusive streetwear & sneaker drops</p>
+        <a href="#shop" class="btn">Shop Now</a>
     </section>
 
-    <section class="shop">
-        <h2>🔥 New Drops</h2>
+    <!-- TRUST -->
+    <section class="trust">
+        <div>🚚 Fast Nairobi Delivery</div>
+        <div>💯 Quality Guaranteed</div>
+        <div>📲 Easy WhatsApp Orders</div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="shop">
+        <h2>🔥 Latest Drops</h2>
 
         <div class="grid">
 
-            <a href="product.html?name=Nike%20Air%20Force%201&price=6500&img=https://images.unsplash.com/photo-1542291026-7eec264c27ff" class="card">
+            <div class="card">
                 <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
                 <h3>Nike Air Force 1</h3>
                 <p>KES 6,500</p>
-            </a>
+                <p class="stock">🔥 Only 3 left</p>
+                <button onclick="order('Nike Air Force 1')">Order Now</button>
+            </div>
 
-            <a href="product.html?name=Jordan%20Retro&price=8000&img=https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" class="card">
+            <div class="card">
                 <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
                 <h3>Jordan Retro</h3>
                 <p>KES 8,000</p>
-            </a>
+                <p class="stock">🔥 Only 2 left</p>
+                <button onclick="order('Jordan Retro')">Order Now</button>
+            </div>
 
-            <a href="product.html?name=Street%20Hoodie&price=2500&img=https://images.unsplash.com/photo-1528701800489-20be3c1eaac7" class="card">
+            <div class="card">
                 <img src="https://images.unsplash.com/photo-1528701800489-20be3c1eaac7">
                 <h3>Street Hoodie</h3>
                 <p>KES 2,500</p>
-            </a>
+                <p class="stock">🔥 Only 5 left</p>
+                <button onclick="order('Street Hoodie')">Order Now</button>
+            </div>
 
         </div>
     </section>
 
+    <!-- WHY US -->
+    <section class="trust-2">
+        <h2>Why Choose Tariqees?</h2>
+        <p>✔ Fast Nairobi Delivery</p>
+        <p>✔ Quality Checked Products</p>
+        <p>✔ Trusted Streetwear Plug</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Tariqees</h2>
+        <p>
+            Tariqees is built for those who move different. Bringing you premium sneakers and streetwear inspired by global culture.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Tariqees. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
